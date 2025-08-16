@@ -7,4 +7,6 @@ Flutter Ui Task 1.
 This screen displaying an Arabic chicken recipe.
 Widgtes Used in this screen: Image, Container, Row, Column, AppBar, Scaffold, Text.
 
+## Screen View
+
 ![Screen View](images/screen_view.jpg)

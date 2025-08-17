@@ -19,64 +19,65 @@ class MyApp extends StatelessWidget {
           title: Text("بيتزا الدجاج اللذيذة"),
           backgroundColor: Colors.orangeAccent,
         ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Image(
-              image: AssetImage("images/pizaa.jpg"),
-              width: 200,
-              height: 250,
+            Text(
+              "وصفة بيتزا الدجاج",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            Container(
-              margin: EdgeInsets.only(right: 20),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                spacing: 12,
-                children: [
-                  Text(
-                    "وصفة بيتزا الدجاج",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text(":مكونات العجينة"),
-                      Text("كوب دقيق  "),
-                      Text("كوب ماء دافئ  "),
-                      Text("ملعفة كبيرة سكر  "),
-                      Text("ملعقة كبيرة خميرة فورية  "),
-                      Text("ملعقة كبيرة زيت زيتون  "),
-                      Text("ملعقة صغيرة ملح  "),
-                    ],
-                  ),
-                  Row(
-                    spacing: 20,
-                    children: [
-                      Column(
-                        children: [
-                          Icon(Icons.event_available),
-                          Text("وقت"),
-                          Text("30 دقيقة"),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Icon(Icons.timer),
-                          Text("تجهيز"),
-                          Text("ساعة"),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Icon(Icons.food_bank_rounded),
-                          Text("أشخاص"),
-                          Text("3-4"),
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+            Column(
+              spacing: 60,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Image(
+                      image: AssetImage("images/pizaa.jpg"),
+                      width: 180,
+                      height: 180,
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      spacing: 12,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text("مكونات العجينة"),
+                            Text("كوب دقيق"),
+                            Text("كوب ماء دافئ"),
+                            Text("ملعقة كبيرة سكر"),
+                            Text("ملعقة كبيرة خميرة فورية جافة"),
+                            Text("ملعقة كبيرة زيت زيتون"),
+                            Text("ملعقة صغيرة ملح"),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: [
+                        Icon(Icons.food_bank_outlined),
+                        Text("٨-٦ أشخاص"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Icon(Icons.more_time_outlined),
+                        Text("١ ساعة"),
+                      ],
+                    ),
+                    Column(
+                      children: [Icon(Icons.timer_outlined), Text("٢٥ دقيقة")],
+                    ),
+                  ],
+                ),
+              ],
             ),
           ],
         ),
